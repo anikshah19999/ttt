@@ -1,0 +1,140 @@
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* main-css */
+.jon-header-top a img{
+    width: 110px;
+}
+.jon-header-top{
+    background:#e0e0e0;
+}
+ul.jon-menu li .color-fix{
+    color: #3763eb;
+  
+}
+ul.jon-menu li .color-fix::before{
+    content: "";
+    position: absolute;
+    top: 255%;
+    left: 21px;
+    width: 25px;
+    height: 3px;
+    background: #3763eb;
+}
+
+ul.jon-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    padding: 0px 20px;
+    position: relative;
+}
+ul.jon-menu li a:hover::after:nth-child(1):active{
+    width:25px;
+    opacity: 1;
+    visibility: visible;
+}
+ul.jon-menu li a::after {
+    content: "";
+    position: absolute;
+    top: 255%;
+    left: 21px;
+    width: 0px;
+    height: 3px;
+    background: #3763eb;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+ul.jon-menu li a:hover::after{
+    width:25px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #3763eb;
+    font-weight: 600;
+    background: #ffffff;
+    padding: 14px 36px;
+    transition: .4s;
+}
+.btn-btn:hover{
+    background: #3763eb;
+    color: #fff;
+}
+/* dropdown menu */
+ul.jon-menu li{
+    position: relative;
+}
+ul.jon-menu li ul {
+    position: absolute;
+    left: 0;
+    top: 216%;
+    width: 220px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    padding-left: 0;
+    list-style: none;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform-origin: top center;
+}
+ul.jon-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul.jon-menu li ul li span{
+    background: #3763eb;
+    display: inline-block;
+    padding: 10px 50px;
+    color: #fff;
+}
+/* slider-section */
+.slider-section{
+ background: #f6f9fc;
+ position: relative;
+ overflow: hidden;
+}
+.slider-content-items{
+    height: 90vh;
+    display:flex;
+    align-items: center;
+}
+.slider-content{
+    box-sizing: border-box;
+}
+.slider-content h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 26px;
+}
+.slider-content p {
+    color: #a9a5b4;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.slider-content a{
+    background: #3763eb !important;
+    color: #fff;
+}
+.slider-photo{
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 900px;
+}
+.slider-photo img {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    margin-top: -123px;
+}
